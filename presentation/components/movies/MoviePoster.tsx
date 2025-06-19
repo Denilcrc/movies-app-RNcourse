@@ -12,7 +12,7 @@ const MoviePoster = ({poster, id, smallPoster = false, className,}: Props) => {
   return (
     <Pressable 
       className={`active:opacity-90 px-2 ${className}`}
-      onPress={ () => router.push(`/movie/[id]`) } //redireccion, usamos push y no replace porque con el push nos permite regresar en pantallas
+      onPress={() => router.push(`/movie/${id}`)} //redireccion, usamos push y no replace porque con el push nos permite regresar en pantallas
     >
         <Image
             source={{uri: poster}}

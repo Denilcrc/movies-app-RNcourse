@@ -9,7 +9,7 @@ export const getMovieByIdActions = async (id:number | string): Promise<CompleteM
 
     try {
         
-        const { data } = await movieApi.get<MovieDBMovieResponse>(`/movie/${ id }`)
+        const { data } = await movieApi.get<MovieDBMovieResponse>(`/${ id }`)
         console.log(data) //lo probamos en el movie/[id]
         console.log('Pelicula - http cargada')
 
